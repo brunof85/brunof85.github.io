@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #f5f7f9;
+}
+
+.marca-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.contatos {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1rem;
+}
+
+.background-blue {
+    background-color: #0047b3;
+}
+
+nav ul {
+    height: 4rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;    
+    list-style: none;    
+}
+
+nav ul li {
+    border-right: 1px solid #E2E2E2;
+}
+
+nav ul li:hover {
+    background-color: #44d4fc;
+    border-radius: 5px;
+    height: 2rem;
+}
+
+nav ul a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #ADADAD;
+}
+
+nav ul a:hover {
+    color: antiquewhite;
+}
+
+/* Main */
+
+.imagem {
+    background-image: url(../img/mercedes.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 7rem;
+    color: #ecece2;
+}
+
+.imagem h1{
+    font-size: 7rem;
+    color: #ecece2;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
