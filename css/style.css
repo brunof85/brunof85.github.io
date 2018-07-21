@@ -1,3 +1,5 @@
+@import 'car-makes-icons/dist/style.css';
+
 body {
     margin: 0;
     padding: 0;
@@ -54,7 +56,7 @@ nav ul a:hover {
 
 /* Main */
 
-.imagem {
+.main-background {
     background-image: url(../img/mercedes.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -69,8 +71,82 @@ nav ul a:hover {
     color: #ecece2;
 }
 
-.imagem h1{
+.main-background h1{
     font-size: 7rem;
     color: #ecece2;
     text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.offer-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    text-align: center;
+    grid-gap: 3rem;
+}
+
+.item-panel {
+    background-color: white;
+    padding-bottom: 6rem;
+    border-radius: 5px;
+}
+
+.car-name {
+    font-size: 18px;
+}
+
+.price {
+    font-size: 30px;
+    color: #5dc302;
+    font-weight: 600;
+}
+
+.image-panel {
+    width: 266.25px;
+    height: auto;
+}
+
+.image-panel img {
+    width: 100%;
+}
+
+.image-panel img:hover {
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: all .5s ease;
+}
+
+.financing-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.saiba-mais {
+    padding: 0 20px;
+    margin-top: 7rem; 
+    
+}
+
+.saiba-mais a, .saiba-mais a:visited {
+    text-decoration: none;
+    background-color: #2f2e2e;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1em;
+}
+
+.brand {
+
 }
