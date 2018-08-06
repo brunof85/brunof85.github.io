@@ -223,7 +223,7 @@ nav ul a:hover {
 }
 
 .form-panel {
-    
+    display: flex;
 }
 
 .features {
