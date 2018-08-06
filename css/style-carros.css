@@ -125,156 +125,142 @@ nav ul a:hover {
 
 /* Main */
 
-.main-background {
-    background-image: url(../img/mercedes.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-    min-height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;    
-}
-
-.main-background h1 {
-    font-size: 7rem;
-    color: #ffffff;
-    text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-@media (max-width:550px) {
-    .main-background h1 {
-        font-size: 4rem;
-    }
-}
-
-.offer-panel {
+.content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem;
-}
-
-.offer-title {
-    margin-bottom: 4rem;
-    font-size: 3rem;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
     justify-items: center;
-    text-align: center;
-    grid-gap: 3rem;
-}
-
-@media (max-width: 1210px) {
-    .cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 900px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 620px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-}
-
-.item-panel {
-    background-color: #ffffff;
-    padding-bottom: 6rem;
-    border-radius: 5px;
-}
-
-.price {
-    font-size: 2rem;
-    color: #5dc302;
-    font-weight: 600;
-}
-
-.image-panel {
-    width: 16.640rem;
-    height: auto;
-}
-
-.image-panel img {
-    width: 100%;
-}
-
-.image-panel img:hover {
-    overflow: hidden;
-    transform: scale(1.2);
-    transition: all .5s ease;
-}
-
-.financing-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 35rem;
-    color: #ffffff;
-    font-size: 1.5rem;
 }
 
-.saiba-mais {
-    padding: 0 20px;
-    margin-top: 7rem; 
+.title h1 {
+    font-size: inherit;
+}
+
+.main-panel {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.3fr;
+    grid-template-areas: 
+        "price slider form";
+    height: 100vh;
+}
+
+.price-panel {
+    grid-area: price;
+}
+
+.price-title {
+    color: #ffffff;
+    background-color: #358caa;
+    text-align: center;
+    margin-bottom: -10px;
+    z-index: 1;
+}
+
+.price-value {
+    color: #5dc302;
+    background-color: #687377;
+    position: relative;
+}
+
+.slider-panel {
+    grid-area: slider;
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.form-panel {
     
 }
 
-.saiba-mais a, .saiba-mais a:visited {
-    text-decoration: none;
-    background-color: #2f2e2e;
-    color: #ffffff;
-    padding: 1rem;
-    font-size: 1rem;
-}
-
-.brand {
+.features {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 35rem;
+    flex-direction: row;
 }
 
-.brand-icons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 5rem;
-    grid-gap: 2rem;
-}
-
-.brand-item img {
-    width: 5vw;
-    min-width: 3rem;
+.features img {
+    width: 2rem;
     height: auto;
 }
 
-.second-background {
-    background-image: url(../img/dirigindo-carro04.png);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 35rem;
-    min-height: 400px;
+.motor {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 7rem;
-    color: #ecece2;
+    flex-direction: column;
 }
+
+.fuel {
+    display: flex;
+    flex-direction: column;
+}
+
+.door {
+    display: flex;
+    flex-direction: column;
+}
+
+.transmission {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-body {
+    display: flex;
+    flex-direction: column;
+}
+
 /* END Main */
 
 /* Footer */
@@ -307,7 +293,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;    
+    width: 100%;   
 }
 
 @media (max-width:1024px) {
@@ -353,7 +339,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 3rem;      
+    font-size: 3rem;        
 }
 
 .social ul li {
