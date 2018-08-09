@@ -53,11 +53,11 @@
             </div>
             <div class="main-panel">
                 <div class="price-panel">
-                    <div class="price-title">
-                        <h3>POR APENAS</h3>
-                    </div>
                     <div class="price-value">
-                        <h1>20.500,00</h1>
+                        20.500,00
+                        <div class="price-title">
+                                POR APENAS
+                        </div>
                     </div>
                 </div>
                 <div class="slider-panel">
@@ -65,22 +65,45 @@
                         <li>
                             <input type="radio" id="slide1" name="slide" checked>
                             <label for="slide1"></label>
-                            <img src="../img/dirigindo-carro01.png" />
+                            <img src="../img/Voyage01.jpg" />
                         </li>
                         <li>
                             <input type="radio" id="slide2" name="slide" checked>
                             <label for="slide2"></label>
-                            <img src="../img/dirigindo-carro04.png" />
+                            <img src="../img/Voyage02.jpg" />
                         </li>
                         <li>
                             <input type="radio" id="slide3" name="slide" checked>
                             <label for="slide3"></label> 
-                            <img src="../img/dirigindo-carro03.png" />
+                            <img src="../img/Voyage03.jpg" />
                         </li>
                     </ul>
                 </div>
                 <div class="form-panel">
-                    <form action=""></form>
+                    <h3>FAÇA UMA COTAÇÃO</h3>
+                    <form action="">                        
+                        <div class="form-group-input">
+                            <input type="text" id="nome" name="nome" placeholder="NOME:">                        
+                            <input type="text" id="cpf" name="cpf" placeholder="CPF:">                                                    
+                            <input type="text" id="email" name="email" placeholder="EMAIL:">                        
+                            <input type="text" id="telefone" name="telefone" placeholder="TELEFONE:">                        
+                        </div>
+                        <div id="left">Deseja Financiar?</div>
+                        <div class="form-group-select">
+                            <input type="text" id="entrada" name="entrada" placeholder="ENTRADA:">
+                            <select name="parcelas" id="parcelas">
+                                <option value="" selected>PARCELAS..</option>
+                                <option value="12">12</option>
+                                <option value="24">24</option>
+                                <option value="36">36</option>
+                                <option value="48">48</option>
+                                <option value="60">60</option>
+                            </select>                            
+                        </div>
+                        <div class="form-group-button">
+                            <input type="submit" value="SOLICITAR COTAÇÃO">
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="features">

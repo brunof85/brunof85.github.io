@@ -92,8 +92,8 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;    
-    list-style: none;    
+    align-items: center;
+    list-style: none;
 }
 
 @media (max-width:746px) {
@@ -106,12 +106,6 @@ nav ul li {
     border-right: 1px solid #E2E2E2;
 }
 
-nav ul li:hover {
-    background-color: #44d4fc;
-    border-radius: 5px;
-    height: 2rem;
-}
-
 nav ul a {
     padding: 1rem;
     text-decoration: none;
@@ -120,6 +114,8 @@ nav ul a {
 
 nav ul a:hover {
     color: #ffffff;
+    background-color: #44d4fc;
+    border-radius: 5px;
 }
 /* END Header */
 
@@ -133,32 +129,44 @@ nav ul a:hover {
 }
 
 .title h1 {
-    font-size: inherit;
+    font-size: 4rem;
+    color: #358caa;
 }
 
 .main-panel {
     display: grid;
     grid-template-columns: 1fr 3fr 1.3fr;
-    grid-template-areas: 
+    grid-template-areas:
         "price slider form";
-    height: 100vh;
+    width: 90vw;
+    height: 55vh;
 }
 
 .price-panel {
     grid-area: price;
+    height: 100%;
+    padding-top: 50%;
 }
 
 .price-title {
     color: #ffffff;
+    font-size: 1.5rem;
     background-color: #358caa;
     text-align: center;
-    margin-bottom: -10px;
+    padding: 5px 10px;
     z-index: 1;
+    position: absolute;
+    top: -1rem;
+    right: 0;
 }
 
 .price-value {
     color: #5dc302;
+    font-size: 2.5rem;
+    font-weight: 700;
     background-color: #687377;
+    text-align: center;
+    padding: 2rem;
     position: relative;
 }
 
@@ -168,8 +176,8 @@ nav ul a:hover {
 
 .slider {
     display: block;
-    height: 293px;
-    width: 600px;
+    width: 690px;
+    height: auto;    
     margin: auto;
     margin-top: 20px;
     position: relative;
@@ -194,14 +202,16 @@ nav ul a:hover {
 }
 
 .slider label {
-    background-color: #000;
+    background-color: #ffffff;
     bottom: 10px;
     cursor: pointer;
     display: block;
-    height: 10px;
+    height: 20px;
     position: absolute;
-    width: 10px;
+    width: 20px;
     z-index: 10;
+    border-radius: 50%;
+    margin: 0 0 0 44%;
 }
 
 .slider li:nth-child(1) label {
@@ -224,41 +234,98 @@ nav ul a:hover {
 
 .form-panel {
     display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #687377;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.form-group-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group-input input[type=text] {
+    width: 100%;
+}
+
+.form-group-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-group-select input[type=text]{
+    width: 50%;
+}
+
+form input, select {
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form #left {
+    text-align: left;
+}
+
+.form-group-button input {
+    background-color: #5dc302;
+    border-color: #5dc302;
+    color: #ffffff;
+    width: 100%;
+    height: 60px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 2rem;
 }
 
 .features {
     display: flex;
     flex-direction: row;
+    width: 50%;
+    padding: 5rem;
+    justify-content: space-around;
 }
 
 .features img {
-    width: 2rem;
+    width: 3rem;
     height: auto;
 }
 
 .motor {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .fuel {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .door {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .transmission {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .car-body {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* END Main */
@@ -293,7 +360,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;   
+    width: 100%;
 }
 
 @media (max-width:1024px) {
@@ -339,7 +406,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 3rem;        
+    font-size: 3rem;
 }
 
 .social ul li {

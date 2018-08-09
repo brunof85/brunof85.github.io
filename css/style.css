@@ -106,12 +106,6 @@ nav ul li {
     border-right: 1px solid #E2E2E2;
 }
 
-nav ul li:hover {
-    background-color: #44d4fc;
-    border-radius: 5px;
-    height: 2rem;
-}
-
 nav ul a {
     padding: 1rem;
     text-decoration: none;
@@ -120,6 +114,8 @@ nav ul a {
 
 nav ul a:hover {
     color: #ffffff;
+    background-color: #44d4fc;
+    border-radius: 5px;       
 }
 /* END Header */
 
@@ -224,6 +220,7 @@ nav ul a:hover {
     height: 35rem;
     color: #ffffff;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .saiba-mais {
