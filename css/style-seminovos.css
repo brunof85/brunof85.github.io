@@ -120,224 +120,95 @@ nav ul a:hover {
 /* END Header */
 
 /* Main */
-a, b, blockquote, body, button, div, form, h3, i, img, li, ol, p, span, strong, tbody, ul, var {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    outline: 0;
+
+.offer-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
 }
-.featured .hero {
-    position: relative;
-    width: 100%;
-    height: 550px;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.offer-title {
+    margin-bottom: 4rem;
+    font-size: 3rem;
 }
-{
-    width: 1314px;
-    margin-right: 0px;
-}
-.no-js .owl-carousel, .owl-carousel.owl-loaded {
-    display: block;
-}
-.owl-carousel {
-    display:;
-    width: 100%;
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
-    z-index: 1;
-}
-.owl-nav {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    margin-top: -20px;
-}
-.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
-    cursor: pointer;
-    cursor: hand;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.owl-nav .owl-prev {
-    float: left;
-    margin-left: 15px;
-}
-.owl-nav .owl-next {
-    float: right;
-    margin-right: 15px;
-}
-.featured .owl-dots {
-    position: absolute;
-    left: 0;
-    bottom: 30px;
-    width: 100%;
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
     text-align: center;
+    grid-gap: 3rem;
 }
-.owl-dots {
-    display: table;
-    margin: 25px auto 0;
-}
-.owl-dots .owl-dot {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 5px;
-}
-.owl-dots .owl-dot span {
-    display: block;
-    width: 11px;
-    height: 11px;
-    background-color: #E2E2E2;
-    border-radius: 50%;
-    transition: All .3s ease-in-out;
-}
-.showcase .filter__title {
-    position: relative;
-    float: left;
-    padding: 0 20px;
-    color: #0047b3;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 60px;
-    text-transform: uppercase;
-    border-left: 1px solid #e1e1e1;
-    border-right: 1px solid #e1e1e1;
-}
-.showcase .filter {
-    display: block;
-    width: 100%;
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
-}
-.showcase .filter__item.current {
-    color: #0047b3;
-}
-.showcase .filter__item {
-    display: table-cell;
-    vertical-align: middle;
-    min-width: 80px;
-    font-size: 12px;
-    margin-right: 7px;
-    font-weight: 700;
-    color: #717171;
-    text-transform: uppercase;
-    line-height: 60px;
-    text-align: center;
-    cursor: pointer;
-    transition: All .3s ease-in-out;
-}
-.showcase .filter__nav {
-    position: relative;
-    float: right;
-    display: table;
-    width: 84%;
-    border-right: 1px solid #e1e1e1;
-}
-.showcase .headline {
-    margin: 40px 0 20px;
-}
-.showcase .headline__item {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 13.5%;
-    margin: 0 15px 25px;
-}
-.row {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-ol, ul {
-    list-style: none;
-}
-@media (min-width: 1200px){
-    .container {
-    width: 1170px;
+
+@media (max-width: 1210px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-@media (min-width: 992px){
-    .container {
-    width: 970px;
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (min-width: 768px){
-    .container {
-        width: 750px;
+
+@media (max-width: 620px) {
+    .cards {
+        grid-template-columns: 1fr;
     }
 }
-.container, .container-fluid {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.showcase .headline__cars {
-    text-align: center;
-}
-.showcase .headline .float {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 80%;
-    height: 40px;
-    margin: auto;
+
+.item-panel {
+    background-color: #ffffff;    
     border-radius: 5px;
-    background: linear-gradient(to bottom,#0047b3 ,#0047b3 100%);
-    color: #fff;
-    text-align: center;
-    font-size: 11px;
-    line-height: 40px;
-    text-shadow: 0 1px 2px rgba(0,0,0,.5);
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: All .4s ease-in-out;
-    -moz-transition: All .4s ease-in-out;
-    -o-transition: All .4s ease-in-out;
-    transition: All .4s ease-in-out;
-    -webkit-transform: translate3d(0,25%,0);
-    -moz-transform: translate3d(0,25%,0);
-    -o-transform: translate3d(0,25%,0);
-    transform: translate3d(0,25%,0);
 }
-.showcase .headline .caption {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #6F6F6F;
-    text-align: center;
-    -webkit-transition: All .4s ease-in-out;
-    transition: All .4s ease-in-out;
+
+.car-name {
+    margin-bottom: 3rem;
 }
-.showcase .card__title, .showcase .headline .caption, .showcase .headline .float {
-    font-weight: 700;
-    text-transform: uppercase;
+
+table {
+    border-collapse: collapse; 
+    width: 100%;  
+    margin-bottom: 2rem;
 }
-.showcase .headline img {
-    width: 100%;
+
+table td {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.price {
+    font-size: 2rem;
+    color: #5dc302;
+    font-weight: 600;
+}
+
+.image-panel {
+    width: 16.640rem;
     height: auto;
-    margin: auto;
-    -webkit-transition: All .4s ease-in-out;
-    transition: All .4s ease-in-out;
 }
-@media only screen and (max-width: 767px){
-    .showcase .headline figure {
-    padding: 0 5px;
-    }
+
+.image-panel img {
+    width: 100%;
 }
-figure {
-    margin: 0;
+
+.image-panel img:hover {
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: all .5s ease;
 }
-a {
-    text-decoration: none;
-}
+
 /* END Main */
 
 /* Footer */
