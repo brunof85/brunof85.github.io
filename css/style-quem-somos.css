@@ -121,6 +121,59 @@ nav ul a:hover {
 
 /* Main */
 
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 5rem 0;   
+}
+
+.title h1, .sellers-title h1 {
+    font-size: 3rem;
+}
+
+.description {
+    font-size: 2rem;
+    width: 80%;
+}
+
+.sellers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0;
+}
+
+.seller {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    justify-content: space-around;
+}
+
+.seller-01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seller-02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seller-picture img {
+    border-radius: 50%;
+    width: 15rem;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0 , 0, .4);
+}
+
+.seller-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
 /* END Main */
 
 /* Footer */
