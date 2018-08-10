@@ -151,6 +151,18 @@ nav ul a:hover {
     justify-content: space-around;
 }
 
+@media (max-width:620px) {
+    .seller {
+        width: 100%;
+    }
+}
+
+@media (max-width:620px) {
+    .seller {
+        flex-direction: column;        
+    }
+}
+
 .seller-01 {
     display: flex;
     flex-direction: column;
@@ -168,6 +180,18 @@ nav ul a:hover {
     width: 15rem;
     border: 5px solid #fff;
     box-shadow: 0px 0px 2px 2px rgba(0, 0 , 0, .4);
+}
+
+@media (max-width:870px) {
+    .seller-picture img {
+        width: 10rem;
+    }    
+}
+
+@media (max-width:620px) {
+    .seller-picture img {
+        margin-top: 2rem;
+    }    
 }
 
 .seller-name {
