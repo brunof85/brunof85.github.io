@@ -208,15 +208,6 @@ footer {
     align-items: center;
 }
 
-.footer-map {
-    padding: 2rem 0rem;
-}
-
-.footer-map iframe{
-    width: 100vw;
-    height: 30vh;
-}
-
 .footer-contact {
     display: flex;
     flex-direction: row;

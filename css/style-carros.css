@@ -138,8 +138,8 @@ nav ul a:hover {
     grid-template-columns: 1fr 3fr 1.3fr;
     grid-template-areas:
         "price slider form";
-    width: 90vw;
-    height: 55vh;
+    width: 90%;
+    height: 55%;
 }
 
 .price-panel {
@@ -344,15 +344,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.footer-map {
-    padding: 2rem 0rem;
-}
-
-.footer-map iframe{
-    width: 100vw;
-    height: 30vh;
 }
 
 .footer-contact {
