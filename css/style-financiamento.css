@@ -121,6 +121,75 @@ nav ul a:hover {
 
 /* Main */
 
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 0 10rem 0;
+}
+
+.title div h1 {
+    text-align: center;
+    margin: 4rem;
+}
+
+.icons-section {
+    display: flex;
+    width: 80vw; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icons {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    max-width: 7vw;
+}
+
+.icon-img {
+    font-size: 5rem;
+}
+
+.finance-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.icon-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw;    
+}
+
+.icon-brand img {
+    margin: 4rem 2rem 4rem 2rem;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15rem;
+}
+
+.compre-agora {
+    padding: 0 20px;
+    margin-top: 7rem; 
+    
+}
+
+.compre-agora a, .compre-agora a:visited {
+    text-decoration: none;
+    background-color: #2f2e2e;
+    color: #ffffff;
+    padding: 3rem;
+    font-size: 1.8rem;
+}
+
 /* END Main */
 
 /* Footer */
