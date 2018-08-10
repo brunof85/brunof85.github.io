@@ -133,19 +133,55 @@ nav ul a:hover {
     color: #358caa;
 }
 
+@media (max-width:720px) {
+    .title h1 {
+        font-size: 2rem;     
+    }
+}
+
 .main-panel {
     display: grid;
-    grid-template-columns: 1fr 3fr 1.3fr;
+    grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-areas:
         "price slider form";
-    width: 90%;
-    height: 55%;
+    grid-gap: 1rem;    
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+}
+
+@media (max-width:1050px) {
+    .main-panel {
+        grid-template-columns: 1fr 2fr;        
+        grid-template-areas:
+            "price slider"
+            "form form";      
+    }
+}
+
+@media (max-width:685px) {
+    .main-panel {
+        grid-template-columns: 1fr;        
+        grid-template-areas:
+            "price"
+            "slider"
+            "form";
+        width: 100%;    
+    }
 }
 
 .price-panel {
     grid-area: price;
+    width: 100%;
     height: 100%;
     padding-top: 50%;
+}
+
+@media (max-width:685px) {
+    .price-panel {        
+        padding-top: 20%;
+    }
 }
 
 .price-title {
@@ -153,7 +189,7 @@ nav ul a:hover {
     font-size: 1.5rem;
     background-color: #358caa;
     text-align: center;
-    padding: 5px 10px;
+    padding: 0.3rem 1rem;
     z-index: 1;
     position: absolute;
     top: -1rem;
@@ -172,15 +208,36 @@ nav ul a:hover {
 
 .slider-panel {
     grid-area: slider;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:685px) {
+    .slider-panel {        
+        padding-bottom: 13rem;
+    }
 }
 
 .slider {
     display: block;
-    width: 690px;
+    width: 80%;
+    min-width: 310px;
     height: auto;    
     margin: auto;
     margin-top: 20px;
     position: relative;
+}
+
+@media (max-width:1050px) {
+    .slider {
+        width: 87%;
+    }
+}
+
+@media (max-width:685px) {
+    .slider {
+        width: 88%;
+    }
 }
 
 .slider li {
@@ -215,15 +272,33 @@ nav ul a:hover {
 }
 
 .slider li:nth-child(1) label {
-    left: 10px;
+    left: 1rem;
+}
+
+@media (max-width:1050px) {
+    .slider li:nth-child(1) label {
+        left: 0.1rem;
+    }
 }
 
 .slider li:nth-child(2) label {
-    left: 40px;
+    left: 2.7rem;
+}
+
+@media (max-width:1050px) {
+    .slider li:nth-child(2) label {
+        left: 1.7rem;
+    }
 }
 
 .slider li:nth-child(3) label {
-    left: 70px;
+    left: 4.5rem;
+}
+
+@media (max-width:1050px) {
+    .slider li:nth-child(3) label {
+        left: 3.5rem;
+    }
 }
 
 .slider li input:checked ~ img {
@@ -238,8 +313,28 @@ nav ul a:hover {
     color: #ffffff;
     background-color: #687377;
     width: 100%;
+    min-width: 310px;
     align-items: center;
     text-align: center;
+    border-radius: 4px;
+    padding: 2rem 0;
+}
+
+@media (max-width:1050px) {
+    .form-panel {
+        margin-top: 5rem;
+        grid-column: 1/3;      
+    }
+}
+
+@media (max-width:685px) {
+    .form-panel {
+        margin-top: 4.6rem;              
+    }
+}
+
+.form-panel form {
+    width: 80%;
 }
 
 .form-group-input {
@@ -252,14 +347,12 @@ nav ul a:hover {
     width: 100%;
 }
 
-.form-group-select {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.form-group-select input{
+    width: 40%
 }
 
-.form-group-select input[type=text]{
-    width: 50%;
+.form-group-select select {
+    width: 49%;
 }
 
 form input, select {
@@ -293,9 +386,21 @@ form #left {
     justify-content: space-around;
 }
 
+@media (max-width:950px) {
+    .features {
+        flex-direction: column;     
+    }
+}
+
 .features img {
     width: 3rem;
     height: auto;
+}
+
+@media (max-width:950px) {
+    .item {
+        margin: 1rem 0;     
+    }
 }
 
 .motor {
